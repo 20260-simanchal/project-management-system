@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Tracker</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1> INPUT YOUR BLOGS DETAILS</h1>
+    </header>
+
+    <section class="application-form">
+        <h2>Add Blog</h2>
+        <form id="app-form">
+            <div class="form-group">
+                <label for="blog-title">Blog Title:</label>
+                <input type="text" id="blog-title" name="blog-title" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="contents">Contents:</label>
+                <input type="text" id="contents" name="contents" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select id="status" name="status" required>
+                    <option value="completed">completed</option>
+                    <option value="uncompleted">uncompleted</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="date">Blog Submission Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="file">Upload file:</label>
+                <input type="file" id="file" name="file" required>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="application-list">
+        <h2>Blog List</h2>
+        <ul id="app-list">
+            <!-- Blog items will be added dynamically using JavaScript -->
+        </ul>
+    </section>
+
+    <script src="script2.js"></script>
+</body>
+</html>
